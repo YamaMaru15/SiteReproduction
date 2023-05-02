@@ -1,0 +1,503 @@
+.title{
+	min-height: 100vh;
+	background: rgb(0, 0, 0);
+	background-size: cover;
+	text-align: center;
+	padding-top: 10vh;
+}
+
+#title-1{
+	font-size: 15vh;
+	padding-bottom: 50px;
+}
+
+#container-2{
+/*	margin:0;
+  	padding: 0;*/
+  	list-style: none;
+}
+
+
+#container-3{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
+#container-6{
+}
+
+#container-1,#container-2,#container-3,#container-4,#container-5,#container-6{
+	padding-bottom: 70px;
+}
+
+#wrapper-1{
+	text-align: center;
+	font-size: 10vh;
+	margin-top: 20vh;
+}
+
+#row-1{
+	margin-right: 0;
+}
+
+#row-2{
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	align-items: center;
+	flex-direction: column;
+	width: 400px;
+}
+
+#row-3{
+	margin-right: 0;
+}
+
+#wrapper-5{
+	background: url("jpeg2.jpg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+#col-1{
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	height: 500px;
+	background: url("jpeg1.jpg");
+	background-position: center;
+	background-size: cover;
+	border-radius: 20px;
+}
+
+#col-2{
+	display: flex;
+	justify-content: space-around;
+	/*align-items: center;*/
+	flex-direction: column;
+	height: 500px;
+}
+
+#video{
+	padding: 0;
+}
+video{
+	padding: 0;
+	object-fit: cover;
+	height: 100%;
+	width: 100%;
+}
+
+.my-1{
+	padding-bottom: 30px;
+
+}
+
+#text-1{
+	font-size: 40px;
+	font-weight: bolder;
+
+}
+
+#text-2{
+	color: skyblue;
+	font-weight: bolder;
+	font-size: 50vm;
+	line-height: 2;
+}
+
+#text-3{
+	display: block;
+	font-size: 50vm;
+	font-family: fantasy;
+}
+
+#text-4{
+	display: block;
+	width: 400px;
+	line-height: 1.5;
+	font-size: 50vm;
+}
+
+#text-5{
+	font-weight: bolder;
+	font-size: 50px;
+	padding-bottom: 50px;
+}
+
+#text-6{
+	font-size: 20px;
+	padding-bottom: 50px;
+}
+
+span{
+	color: indianred;
+}
+
+#btn-1{
+}
+
+#btn-2{
+	display: block;
+	width: 200px;
+}
+
+#btn-3{
+
+}
+
+.a-all{
+	color: black;
+}
+
+ul{
+	list-style: none;
+	padding-left: 0;
+}
+
+li{
+
+}
+
+h3{
+	font-size: 20px;
+}
+
+#span1::before{
+content:;
+}
+/*
+#span2::before{
+	content: "\"; 
+		\0a5
+}
+*/
+.footer-button{
+	color: black;
+}
+.footer-button:hover{
+	text-decoration: underline;
+	color: black;
+}
+
+.footer-button2{
+	border: none;
+	background-color: white;
+	color: black;
+
+}
+
+.sns{
+	color: black;
+}
+.sns:hover{
+	color: rgba(0, 0, 0,.8);
+	text-decoration: none;
+
+}
+
+#twitter{
+}
+
+/*↓スライダー*/
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
+   width:90%;
+    margin:0 auto;
+}
+
+.slider img {
+    width:100%;/*スライダー内の画像を横幅100%に*/
+    height: 30vw; /*横幅に合わせて vwで画像の大きさを可変させていく*/
+    object-fit: cover;/*高さの指定だけして、30vhの高さに合わせて画像が横や縦に伸びてしまうのを防ぐ*/
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+    margin:0 10px;
+}
+
+/*矢印の設定*/
+
+/*戻る、次へ矢印の位置*/
+.slick-prev, 
+.slick-next {
+    position: absolute;/*絶対配置にする*/
+    top: 42%;
+    cursor: pointer;/*マウスカーソルを指マークに*/
+    outline: none;/*クリックをしたら出てくる枠線を消す*/
+    border-top: 2px solid #666;/*矢印の色*/
+    border-right: 2px solid #666;/*矢印の色*/
+    height: 15px;
+    width: 15px;
+}
+
+.slick-prev {/*戻る矢印の位置と形状*/
+    left: -1.5%;
+    transform: rotate(-135deg);
+}
+
+.slick-next {/*次へ矢印の位置と形状*/
+    right: -1.5%;
+    transform: rotate(45deg);
+}
+
+/*ドットナビゲーションの設定*/
+
+.slick-dots {
+    text-align:center;
+  margin:20px 0 0 0;
+}
+
+.slick-dots li {
+    display:inline-block;
+  margin:0 5px;
+}
+
+.slick-dots button {
+    color: transparent;
+    outline: none;
+    width:8px;/*ドットボタンのサイズ*/
+    height:8px;/*ドットボタンのサイズ*/
+    display:block;
+    border-radius:50%;
+    background:#ccc;/*ドットボタンの色*/
+}
+
+.slick-dots .slick-active button{
+    background:#333;/*ドットボタンの現在地表示の色*/
+}
+
+
+
+.slider h2{
+    text-align:center;
+    padding:20px;
+    font-size: 5vh;
+    margin-bottom: 0;
+}
+
+.slider a{
+  color: #333;
+}
+
+.slider a:hover,
+.slider a:active{
+  text-decoration: none;
+}
+
+/*↑スライダー*/
+
+/*ヘッダー*/
+
+#header{
+	 position: fixed;/*fixedを設定して固定*/
+  height: 70px;/*高さ指定*/
+  width:100%;/*横幅指定*/
+    z-index: 999;/*最前面へ*/
+  /*以下はレイアウトのためのCSS*/
+  justify-content: space-between;
+  align-items: center;
+  background:#fff;
+  color:#333;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+}
+
+.ResponsiveHeader{
+	display: none;
+}
+
+.HiddenHeader{
+	visibility: hidden;
+}
+
+/*==ふわっと出現させるためのCSS*/
+
+/*　上に上がる動き　*/
+
+.UpMove{
+	/*display: flex;*/
+  position: fixed;
+  width:100%;
+  animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime{
+  from {
+    opacity: 1;
+  transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+}
+
+/*　下に下がる動き　*/
+.DownMove{
+	/*display: flex;*/
+  position: fixed;
+  width:100%;
+  animation: DownAnime 0.5s forwards;
+}
+@keyframes DownAnime{
+  from {
+    opacity: 0;
+  transform: translateY(-100px);
+  }
+  to {
+    opacity: 1;
+  transform: translateY(0);
+  }
+}
+
+
+
+body{
+
+
+}
+
+/*フッター*/
+
+#footer{
+	/*height: 100px;*/
+	width: 100%;
+/* 	position: absolute;/*②絶対位置*/*/
+ 	bottom: 0; /*下に固定*/
+ 	padding-bottom: 30px;
+}
+
+#col-3{
+	border-top: solid #ccc 1px;
+}
+
+.footer-nav-list li{
+	padding: 5px;
+}
+
+.null-li{
+	display: none;
+	padding: 0;
+}
+
+.footer-second-wrapper{
+padding: 10px;
+}
+
+/*レスポンシブデザイン*/
+
+	/* lgの範囲に適用されるcss（992px以上 1200px未満） */
+@media screen and (max-width: 1200px) {
+
+/*フッター*/
+.footer-nav-list{
+	/*要素を横並びにする*/
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/*下に区切りの線を引く*/
+	border-bottom: solid #ccc 1px;
+	padding: 5px 0 5px 0;
+}
+
+#col-3{
+	border: none;
+}
+
+}
+
+
+	/* mdの範囲に適用されるcss（768px以上 992px未満） */
+@media screen and (max-width:992px) {
+
+/*フッター*/
+.footer-nav-list{
+	/*下に区切りの線を引く*/
+	border-bottom: solid #ccc 1px;
+	padding: 5px 0 5px 0;
+}
+
+#col-3{
+	border: none;
+}
+
+
+
+/*#video{
+	height: 40%;
+}*/
+
+}
+
+	/* sm,xsの範囲に適用されるcss（ 768px未満） */
+@media screen and (max-width:767px) {
+
+/*ヘッダー*/
+
+#header{
+	display: none;
+}
+
+.ResponsiveHeader{
+	display: block;
+}
+
+.ResponsiveBtn1{
+	z-index: 999;/*最前面*/
+	position: fixed;/*固定*/
+	top: 0;
+	right: 0;/*右上に固定*/
+	margin: 20px 30px 0 0;
+	width: 40vw;
+	font-size: 2.8vw;
+	white-space: nowrap;
+}
+
+.ResponsiveBtn2{
+	z-index: 999;/*最前面*/
+	position: fixed;/*固定*/
+	bottom: 0;
+	left: 0;/*左下に固定*/
+	width: 100%;
+	background-color: #ffff;
+	display: flex;/*ボタンの配置を真ん中へ*/
+	justify-content: center;/*ボタンの配置を真ん中へ*/
+	padding: 10px;
+}
+
+.ResponsiveBtn2 button{
+	/*margin: 10vh;*/
+	width: 90vw;
+	height: 10vh;
+	font-size: 3vw;
+}
+
+/*フッター*/
+.footer-nav-list{
+	/*下に区切りの線を引く*/
+	display: block;
+	border-bottom: solid #ccc 1px;
+	padding: 5px 0 5px 0;
+}
+
+#col-3{
+	border: none;
+}
+
+#footer{
+	padding-bottom: 80px;
+}
+}
+/*ヘッダー*/
+
